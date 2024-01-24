@@ -1,11 +1,9 @@
 package FactoryMethod;
 
 public abstract class AterioivaOtus {
-
     Juoma juoma = null;
 
     public abstract Juoma createJuoma();
-
 
     public void aterioi(){
         syö();
@@ -15,7 +13,6 @@ public abstract class AterioivaOtus {
     public void syö(){
         System.out.println("Kylläpä ruoka maistuukin hyvältä");
     }
-
 
     public void juo(){
         if (juoma == null)
