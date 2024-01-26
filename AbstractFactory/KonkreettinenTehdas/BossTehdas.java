@@ -1,6 +1,8 @@
-package AbstractFactory;
+package AbstractFactory.KonkreettinenTehdas;
 
-public class BossTehdas extends Tehdas{
+import AbstractFactory.*;
+
+public class BossTehdas extends Tehdas {
 
     @Override
     public Farkut makeFarkut() {

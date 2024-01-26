@@ -1,4 +1,6 @@
-package AbstractFactory;
+package AbstractFactory.KonkreettinenTehdas;
+
+import AbstractFactory.*;
 
 public class AdduTehdas extends Tehdas {
     @Override
