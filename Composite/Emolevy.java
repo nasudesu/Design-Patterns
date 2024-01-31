@@ -1,13 +1,17 @@
 package Composite;
 
-public class Emolevy extends KoneenOsa{
+import java.util.ArrayList;
+import java.util.List;
 
-    public Emolevy(String nimi, double hinta) {
-        super(nimi, hinta);
-    }
+public class Emolevy implements Komponentti{
 
-    @Override
+    List<Komponentti> komponentit = new ArrayList<>();
+
+    public Emolevy(){
+
+    };
+
     public double laskeHinta() {
-        return this.Hinta;
+        return 0;
     }
 }

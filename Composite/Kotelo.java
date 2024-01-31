@@ -1,12 +1,10 @@
 package Composite;
 
-public class Kotelo extends KoneenOsa {
-    public Kotelo(String nimi, double hinta) {
-        super(nimi, hinta);
-    }
+public class Kotelo implements Komponentti {
+
 
     @Override
     public double laskeHinta() {
-        return this.Hinta;
+        return 0;
     }
 }
