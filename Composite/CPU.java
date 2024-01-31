@@ -8,4 +8,9 @@ public class CPU extends KoneenOsa{
     public double laskeHinta() {
         return this.Hinta;
     }
+
+    @Override
+    public void lisaaKomponentti(Komponentti komponentti) {
+
+    }
 }

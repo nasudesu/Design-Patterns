@@ -7,11 +7,23 @@ public class Emolevy implements Komponentti{
 
     List<Komponentti> komponentit = new ArrayList<>();
 
-    public Emolevy(){
+    protected double Hinta;
 
+    protected String Nimi;
+
+    public Emolevy(String nimi, double hinta){
+        this.Hinta = hinta;
+        this.Nimi = nimi;
     };
 
+    public void lisaaKomponentti(Komponentti k){
+        komponentit.add(k);
+    }
+
     public double laskeHinta() {
-        return 0;
+        for (int i = 0; i < komponentit.size(); i++) {
+            this.Hinta += komponentit.get(i).laskeHinta();
+        }
+        return this.Hinta;
     }
 }
