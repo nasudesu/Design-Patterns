@@ -11,7 +11,8 @@ public class ListConver {
     }
 
     public void printList() {
-        System.out.println(strategy.listToString(list));
+        strategy.listToString(list);
+        System.out.println();
     }
 
     public void setStrategy(ListConverter strategy) {

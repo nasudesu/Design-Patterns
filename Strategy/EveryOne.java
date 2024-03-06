@@ -2,11 +2,9 @@ package Strategy;
 
 public class EveryOne implements ListConverter{
     @Override
-    public String listToString(String[] list) {
-        String result = "";
-        for (int i = 0; i < list.length; i++) {
-            result += list[i] + " ";
+    public void listToString(String[] list) {
+        for (String s : list) {
+            System.out.print(s + "\n");
         }
-        return result;
     }
 }

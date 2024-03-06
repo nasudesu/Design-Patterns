@@ -2,7 +2,6 @@ package Strategy;
 
 public interface ListConverter {
 
-    public String listToString(String[] list);
-
+    public void listToString(String[] list);
 
 }

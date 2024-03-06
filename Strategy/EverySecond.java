@@ -1,12 +1,13 @@
 package Strategy;
 
-public class EverySecond implements ListConverter{
+public class EverySecond implements ListConverter {
     @Override
-    public String listToString(String[] list) {
-        String result = "";
-        for (int i = 0; i < list.length; i+=2) {
-            result += list[i] + " ";
+    public void listToString(String[] list) {
+        for (int i = 0; i < list.length; i++) {
+            System.out.print(list[i]+ " ");
+            if (i % 2 == 1) {  // Check if it's the second iteration
+                System.out.print("\n");
+            }
         }
-        return result;
     }
 }
