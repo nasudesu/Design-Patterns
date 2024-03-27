@@ -1,4 +1,4 @@
-package State;
+package Visitor;
 
 public class Pokemon{
     private PokemonState state;
