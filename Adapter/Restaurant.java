@@ -1,6 +1,6 @@
 package Adapter;
 
-public class Restaurant implements IClient {
+public class Restaurant {
     String drink = null;
     String mainCourse = null;
     String dessert = null;
@@ -22,15 +22,7 @@ public class Restaurant implements IClient {
         this.dessert = dessert;
     }
 
-    @Override
-    public void order(String drink, String mainCourse, String dessert) {
-        setDrink(drink);
-        setMainCourse(mainCourse);
-        setDessert(dessert);
-    }
-
-    @Override
-    public void showOrder() {
+    public void showMyOrder() {
         System.out.println("------Order-----");
         System.out.println("Drink: " + drink);
         System.out.println("Main Course: " + mainCourse);
