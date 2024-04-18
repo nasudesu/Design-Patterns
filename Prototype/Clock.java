@@ -2,7 +2,6 @@ package Prototype;
 
 public class Clock implements Cloneable {
 
-    private String time;
     private ClockHand clockHand;
 
     public Clock(ClockHand clockHand){
@@ -10,7 +9,7 @@ public class Clock implements Cloneable {
     }
 
     public String getTime(){
-        return clockHand.getMinute() + ":" + clockHand.getHour();
+        return clockHand.getHour() + ":" + clockHand.getMinute();
     }
 
     public void tick(){
